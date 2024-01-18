@@ -1,0 +1,182 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: "League Spartan", sans-serif;
+  font-size: 15px;
+}
+
+h1 {
+  font-weight: 700;
+  color: hsl(300, 43%, 22%);
+  text-align: center;
+  padding: 3rem 1rem 1rem 1rem;
+}
+
+h2 {
+  font-size: 17px;
+  font-weight: 700;
+  color: white;
+}
+
+h3 {
+  font-size: 17px;
+  font-weight: 400;
+  color: #ee68a4
+}
+
+p {
+  font-weight: 500;
+  color: hsl(303, 10%, 53%);
+}
+
+.card {
+  display: grid;
+  grid-template-columns: 1fr;
+  background-image: url(../images/bg-pattern-top-mobile.svg), url(../images/bg-pattern-bottom-mobile.svg);
+  background-position: 0px 0px, right 0px bottom 0px;
+  background-repeat: no-repeat;
+  /* margin: 5% auto; */
+  padding: 1.5rem;
+}
+
+.first-text p {
+  text-align: center;
+  line-height: 1.5;
+  padding-bottom: 2rem;
+}
+
+.ratings {
+  margin-bottom: 2rem;
+}
+
+.stars {
+  background-color: hsl(300, 24%, 96%);
+  text-align: center;
+  padding: 1rem;
+  margin-bottom: 1rem;
+  border-radius: 8px;
+}
+
+.stars img {
+  height: 16px;
+  width: auto;  
+}
+
+.stars p {
+  color: hsl(300, 43%, 22%);
+  font-weight: 700;
+  padding-top: 0.5rem;
+}
+
+.testimonial-1,
+.testimonial-2, 
+.testimonial-3 {
+  background-color: hsl(300, 43%, 22%);
+  padding: 2rem;
+  margin-bottom: 1rem;
+  border-radius: 8px;
+}
+
+.person {
+  display: flex;
+  padding-bottom: 1rem;
+}
+
+img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
+
+.name {
+  padding-left: 1.5rem;
+  line-height: 1.2;
+}
+
+.testimonials p {
+  color: white;
+  line-height: 1.5;
+}
+
+@media screen and (min-width:600px){
+  .card {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+    background-image: url(../images/bg-pattern-top-desktop.svg), url(../images/bg-pattern-bottom-desktop.svg);
+    background-position: 0px 0px, right 0px bottom 0px;
+    background-repeat: no-repeat;
+    padding: 7rem 10rem;
+  }
+
+  .first-text {
+    width: 380px;
+    text-align: start;
+  }
+
+  h1 {
+    font-size: 48px;
+    text-align: start;
+    padding: 0 0 1rem 0;
+  }
+
+  .first-text p {
+    text-align: start;
+  }
+
+  .ratings {
+    width: 540px;
+    height: 200px;
+  }
+
+  .stars {
+    width: 445px;
+    height: 56px;
+    padding: 1rem 2rem;
+    display: flex;
+    align-items:last baseline;
+    /* justify-content: space-between; */
+  }
+
+  .stars img {
+    margin-right: 10px;
+    display: inline-block;
+    vertical-align: sub;
+  }
+
+  .stars p {
+    margin-left: 1rem;
+  }
+
+  .testimonials {
+    grid-column: span 2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+  }
+
+  .testimonial-2 {
+    position: relative;
+    top: 1rem;
+  }
+
+  .testimonial-3 {
+    position: relative;
+    top: 2rem;
+  }
+
+  .rating-2 {
+    position: relative;
+    left: 2.5rem;
+  }
+
+  .rating-3 {
+    position: relative;
+    left: 5.5rem;
+  }
+}
